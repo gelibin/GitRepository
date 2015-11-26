@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="aaa">
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	<!--<script src="//www.w3cschool.cc/try/angularjs/1.2.5/angular.min.js"></script>-->
+	<script src="js/angular.js"></script>
+	<script src="js/controller.js"></script>
+	<script src="js/directive.js"></script>
+	</head>
+	<body>
+		<div ng-controller="myCtrl">
+			  <div >我的名字是：<span ng-bind="name"></span>
+
+           <!-- <br/>我的年龄是：<span ng-bind="agee"></span>-->
+            <br/>我的岗位是：<span ng-bind="positionName"></span>
+            <br />我的性别是：<span ng-bind="sex"></span>
+            <br />我的ceod是：<span ng-bind="ceod"></span>
+            <input type="text" ng-model="color" placeholder="Enter a color"/>
+        </div>
+       
+		<hello my-name='{{name}}'attr-color='color' result='result' ages="agee" sexs='sexd' positions='ceod' change-my-age="changeAge()" change-my-name="changeName()"></hello>
+		</div>
+		<div >
+			<button superman strong>力量</button><br/>
+			<button superman strong power>力量+能量</button><br/>
+			<button superman strong power light>力量+能量+光源</button>
+		</div>
+	</body>
+</html>
